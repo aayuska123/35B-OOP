@@ -1,0 +1,4 @@
+int age = 20; // Example age, you can change this value as needed
+
+String canVote = (age >= 18) ? "Yes" : "No";
+System.out.println("Can the person vote? " + canVote);

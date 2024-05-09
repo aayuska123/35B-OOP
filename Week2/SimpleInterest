@@ -1,0 +1,19 @@
+public class SimpleInterest {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input principle amount, time in years, and rate of interest
+        System.out.print("Enter principle amount, time in years, and rate of interest (separated by space): ");
+        double principleAmount = scanner.nextDouble();
+        double time = scanner.nextDouble();
+        double rate = scanner.nextDouble();
+
+        // Calculate simple interest
+        double simpleInterest = (principleAmount * time * rate) / 100;
+
+        // Display the result
+        System.out.println("Simple interest: " + simpleInterest);
+
+        scanner.close();
+    }
+}

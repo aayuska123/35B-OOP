@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class StudentResult {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter marks of four subjects:");
+
+        System.out.print("Subject 1: ");
+        int subject1 = scanner.nextInt();
+
+        System.out.print("Subject 2: ");
+        int subject2 = scanner.nextInt();
+
+        System.out.print("Subject 3: ");
+        int subject3 = scanner.nextInt();
+
+        System.out.print("Subject 4: ");
+        int subject4 = scanner.nextInt();
+
+        int totalMarks = subject1 + subject2 + subject3 + subject4;
+
+        double totalPercentage = (double) totalMarks / 4;
+
+        String result = totalPercentage >= 70 ? "First Class"
+                : totalPercentage > 59 ? "Upper Second Class"
+                : totalPercentage > 49 ? "Second Class"
+                : totalPercentage > 39 ? "Third Class"
+                : "Fail";
+
+        System.out.println("Total Marks: " + totalMarks);
+        System.out.println("Total Percentage: " + totalPercentage + "%");
+        System.out.println("Result: " + result);
+
+        scanner.close();
+    }
+}

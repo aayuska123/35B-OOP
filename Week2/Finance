@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class Finance {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the side length of the square: ");
+        double squareSide = scanner.nextDouble();
+
+        double squareArea = squareSide * squareSide;
+        double squarePerimeter = 4 * squareSide;
+
+        System.out.println("Area of the square: " + squareArea);
+        System.out.println("Perimeter of the square: " + squarePerimeter);
+
+        System.out.print("\nEnter principal amount: ");
+        double principal = scanner.nextDouble();
+        System.out.print("Enter interest rate (in percentage): ");
+        double rate = scanner.nextDouble();
+        System.out.print("Enter time period (in years): ");
+        double time = scanner.nextDouble();
+
+        double simpleInterest = (principal * rate * time) / 100;
+
+        System.out.println("Simple Interest: " + simpleInterest);
+
+        System.out.print("\nEnter base length of the triangle: ");
+        double base = scanner.nextDouble();
+        System.out.print("Enter height of the triangle: ");
+        double height = scanner.nextDouble();
+
+        double triangleArea = 0.5 * base * height;
+
+        System.out.println("Area of the triangle: " + triangleArea);
+
+        System.out.print("\nEnter the side length of the cube: ");
+        double cubeSide = scanner.nextDouble();
+
+        double cubeVolume = Math.pow(cubeSide, 3);
+
+        System.out.println("Volume of the cube: " + cubeVolume);
+
+        System.out.print("\nEnter the length of the cuboid: ");
+        double cuboidLength = scanner.nextDouble();
+        System.out.print("Enter the width of the cuboid: ");
+        double cuboidWidth = scanner.nextDouble();
+        System.out.print("Enter the height of the cuboid: ");
+        double cuboidHeight = scanner.nextDouble();
+
+        double cuboidVolume = cuboidLength * cuboidWidth * cuboidHeight;
+
+        System.out.println("Volume of the cuboid: " + cuboidVolume);
+
+        scanner.close();
+    }
+}

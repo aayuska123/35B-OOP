@@ -1,0 +1,20 @@
+public class Interest {
+    public static void main(String[] args) {
+        
+        if (args.length < 2) {
+            System.out.println("Please provide two integers as command-line arguments.");
+            return;
+        }
+
+        int num1 = Integer.parseInt(args[0]);
+        int num2 = Integer.parseInt(args[1]);
+
+        int sumOfTwo = num1 + num2;
+
+        int productOfTwo = num1 * num2;
+
+        double result = (double) sumOfTwo / productOfTwo;
+
+        System.out.println("Result of division of sum and product: " + result);
+    }
+}

@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Operation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input the first integer
+        System.out.print("Enter the first integer: ");
+        int num1 = scanner.nextInt();
+
+        // Input the second integer
+        System.out.print("Enter the second integer: ");
+        int num2 = scanner.nextInt();
+
+        // Calculate the sum
+        int sum = num1 + num2;
+
+        // Calculate the product
+        int product = num1 * num2;
+
+        // Calculate the division of the sum and product
+        double result = (double) sum / product;
+
+        // Print the result
+        System.out.println("Result of division of sum and product: " + result);
+
+        scanner.close();
+    }
+}
